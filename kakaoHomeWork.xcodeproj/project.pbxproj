@@ -24,6 +24,12 @@
 		285798C22879B8E1005FC1AC /* kakaoHomeWorkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285798C12879B8E1005FC1AC /* kakaoHomeWorkUITestsLaunchTests.swift */; };
 		285798D12879BAC5005FC1AC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285798D02879BAC5005FC1AC /* BaseViewController.swift */; };
 		285798D32879BD10005FC1AC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285798D22879BD10005FC1AC /* SearchViewController.swift */; };
+		2888F1CB28817E6C0052907D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888F1CA28817E6C0052907D /* CustomTextField.swift */; };
+		2888F1CE2881838E0052907D /* TextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888F1CD2881838E0052907D /* TextField+.swift */; };
+		2888F1D02881862B0052907D /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888F1CF2881862B0052907D /* Color+.swift */; };
+		2888F1D2288189170052907D /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888F1D1288189170052907D /* IndicatorView.swift */; };
+		2888F1D42881892C0052907D /* ViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888F1D32881892C0052907D /* ViewController+.swift */; };
+		2888F1D72881C9ED0052907D /* IndicatorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888F1D62881C9ED0052907D /* IndicatorCollectionViewCell.swift */; };
 		28C66ADD287DE77D00E7F521 /* DetailBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C66ADC287DE77D00E7F521 /* DetailBookViewController.swift */; };
 		28C66ADF287E07B500E7F521 /* NewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C66ADE287E07B500E7F521 /* NewModel.swift */; };
 		28C66AE1287E199600E7F521 /* BookDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C66AE0287E199600E7F521 /* BookDetailViewModel.swift */; };
@@ -74,6 +80,12 @@
 		285798C12879B8E1005FC1AC /* kakaoHomeWorkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kakaoHomeWorkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		285798D02879BAC5005FC1AC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		285798D22879BD10005FC1AC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2888F1CA28817E6C0052907D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		2888F1CD2881838E0052907D /* TextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+.swift"; sourceTree = "<group>"; };
+		2888F1CF2881862B0052907D /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		2888F1D1288189170052907D /* IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		2888F1D32881892C0052907D /* ViewController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+.swift"; sourceTree = "<group>"; };
+		2888F1D62881C9ED0052907D /* IndicatorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorCollectionViewCell.swift; sourceTree = "<group>"; };
 		28C66ADC287DE77D00E7F521 /* DetailBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookViewController.swift; sourceTree = "<group>"; };
 		28C66ADE287E07B500E7F521 /* NewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewModel.swift; sourceTree = "<group>"; };
 		28C66AE0287E199600E7F521 /* BookDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewModel.swift; sourceTree = "<group>"; };
@@ -157,6 +169,7 @@
 			children = (
 				28C66AE7288080E900E7F521 /* DetailBookCell */,
 				2836C121287C93C400492047 /* SearchCollectionViewCell.swift */,
+				2888F1D62881C9ED0052907D /* IndicatorCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -255,6 +268,7 @@
 		285798CE2879BA94005FC1AC /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				2888F1CC28817EE70052907D /* CustomClass */,
 				28C66AE4287E213A00E7F521 /* Extenstion */,
 				2836C137287CA96100492047 /* Constant */,
 				2836C12C287CA95000492047 /* Font */,
@@ -271,11 +285,23 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		2888F1CC28817EE70052907D /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				2888F1D1288189170052907D /* IndicatorView.swift */,
+				2888F1CA28817E6C0052907D /* CustomTextField.swift */,
+			);
+			path = CustomClass;
+			sourceTree = "<group>";
+		};
 		28C66AE4287E213A00E7F521 /* Extenstion */ = {
 			isa = PBXGroup;
 			children = (
+				2888F1D32881892C0052907D /* ViewController+.swift */,
 				28C66AE5287E214600E7F521 /* String+.swift */,
 				28C66AEE28816CA300E7F521 /* Button+.swift */,
+				2888F1CD2881838E0052907D /* TextField+.swift */,
+				2888F1CF2881862B0052907D /* Color+.swift */,
 			);
 			path = Extenstion;
 			sourceTree = "<group>";
@@ -539,16 +565,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2888F1D72881C9ED0052907D /* IndicatorCollectionViewCell.swift in Sources */,
 				285798D32879BD10005FC1AC /* SearchViewController.swift in Sources */,
 				28C66ADD287DE77D00E7F521 /* DetailBookViewController.swift in Sources */,
 				28C66AEB2881522E00E7F521 /* BookContentTableViewCell.swift in Sources */,
 				28C66AE1287E199600E7F521 /* BookDetailViewModel.swift in Sources */,
+				2888F1D2288189170052907D /* IndicatorView.swift in Sources */,
+				2888F1CB28817E6C0052907D /* CustomTextField.swift in Sources */,
 				28C66AE3287E1A6800E7F521 /* BookDetailModel.swift in Sources */,
 				285798D12879BAC5005FC1AC /* BaseViewController.swift in Sources */,
+				2888F1D02881862B0052907D /* Color+.swift in Sources */,
+				2888F1CE2881838E0052907D /* TextField+.swift in Sources */,
 				28C66ADF287E07B500E7F521 /* NewModel.swift in Sources */,
 				2836C129287C9EF700492047 /* SearchModel.swift in Sources */,
 				285798A62879B8DF005FC1AC /* kakaoHomeWork.xcdatamodeld in Sources */,
 				28C66AEF28816CA300E7F521 /* Button+.swift in Sources */,
+				2888F1D42881892C0052907D /* ViewController+.swift in Sources */,
 				2857989C2879B8DF005FC1AC /* AppDelegate.swift in Sources */,
 				2836C12B287CA07D00492047 /* SearchViewModel.swift in Sources */,
 				28C66AED2881642600E7F521 /* PurchaseBookTableViewCell.swift in Sources */,

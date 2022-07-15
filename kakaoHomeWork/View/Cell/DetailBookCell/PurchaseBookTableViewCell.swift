@@ -33,7 +33,6 @@ class PurchaseBookTableViewCell: UITableViewCell {
         button.titleLabel?.font = UIFont(name: Constant.fontAppleSDGothicNeoBold, size: 12)
         button.setTitleColor(UIColor.gray, for: .normal)
         button.titleLabel?.textAlignment = .left
-        button.setUnderline()
         return button
     }()
     

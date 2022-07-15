@@ -24,12 +24,12 @@ class DetailBookViewController: BaseViewController {
                 print(self.result)
                 self.labelBookName.text = result.title
                 
-                let stringAuthor = "저자 \(result.authors ?? "")"
-                let attributeAuthor = stringAuthor.attributeStringFontAndColor(stringAuthor, Constant.fontAppleSDGothicNeoLight, 10, 0, 2, .lightGray)
+                let stringAuthor = "Author \(result.authors ?? "")"
+                let attributeAuthor = stringAuthor.attributeStringFontAndColor(stringAuthor, Constant.fontAppleSDGothicNeoLight, 10, 0, 6, .lightGray)
                 self.labelBookAuthor.attributedText = attributeAuthor
 
-                let stringPublisher = "출판사 \(result.publisher ?? "")"
-                let attributePublisher = stringPublisher.attributeStringFontAndColor(stringPublisher, Constant.fontAppleSDGothicNeoLight, 10, 0, 3, UIColor.lightGray)
+                let stringPublisher = "Publisher \(result.publisher ?? "")"
+                let attributePublisher = stringPublisher.attributeStringFontAndColor(stringPublisher, Constant.fontAppleSDGothicNeoLight, 10, 0, 9, UIColor.lightGray)
                 self.labelBookPublisher.attributedText = attributePublisher
                 
                 self.labelBookPrice.text = result.price ?? ""
@@ -214,6 +214,7 @@ extension DetailBookViewController : UITableViewDelegate, UITableViewDataSource 
             }
             cell.buttonPurchase.setTitle(self.result?.url ?? "", for: .normal)
             cell.buttonPurchase.addTarget(self, action: #selector(actionGoSafari), for: .touchUpInside)
+            cell.buttonPurchase.setUnderline()
             return cell
             
         }
