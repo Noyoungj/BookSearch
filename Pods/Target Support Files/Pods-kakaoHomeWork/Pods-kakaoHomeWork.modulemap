@@ -1,0 +1,6 @@
+framework module Pods_kakaoHomeWork {
+  umbrella header "Pods-kakaoHomeWork-umbrella.h"
+
+  export *
+  module * { export * }
+}
